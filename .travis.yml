@@ -1,8 +1,8 @@
 language: csharp
-solution: Week2TaskC/WebAppTaskC.sln
+solution: cicdApp/cicdApp.sln
 install:
   - sudo apt-get install -y gtk-sharp2
-  - nuget restore Week2TaskC/WebAppTaskC.sln
+  - nuget restore cicdApp/cicdApp.sln
 deploy:
  provider: azure_web_apps
 skip_cleanup: true
