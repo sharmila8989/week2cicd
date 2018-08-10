@@ -1,0 +1,8 @@
+language: csharp
+solution: cicdApp/cicdApp.sln
+install:
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore cicdApp/cicdApp.sln
+ deploy:
+ provide: azure_web_apps
+ skip_cleanup: true
