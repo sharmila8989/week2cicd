@@ -4,5 +4,5 @@ install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore cicdApp/cicdApp.sln
  deploy:
- provide: azure_web_apps
+ provider: azure_web_apps
  skip_cleanup: true
